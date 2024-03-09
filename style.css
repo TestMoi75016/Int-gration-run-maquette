@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    text-align: center;
+    min-height: 100vh;
+    max-width: 1250px;
+}
+
+/*****Section-1*****/
+.run-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.run-left {
+    /* border: 1px solid rgb(205, 199, 199); */
+    text-align: left;
+    padding: 40px ;
+    font-weight: 100;
+    font-size: 0.9rem;
+    line-height: 20px;
+    margin: 140px auto; 
+}
+
+.run-left h2 {
+    padding: 30px 0 20px;
+    font-weight: lighter;
+    font-size: 2.2rem;
+}
+
+.run-left p {
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.button-container {
+    display: flex;
+    justify-content:left;
+    
+}
+button {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 50px ;
+    padding: 10px 18px;
+    background: transparent;
+    border: 1px solid rgb(214, 210, 210);
+    text-align: left;   
+    font-size: 0.5rem;
+    margin-bottom: 15px;
+}
+
+
+.run-right {
+    background: url(/img/banner.jpg) center/cover;
+}
+
+/*****Section-2*****/
+
+.section-deux {
+    border: 0.5px solid rgb(214, 210, 210);
+}
+.magna-container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.magna-left {
+    background: url(./img/img-left.jpg) center/cover;
+    width: 100%
+}
+
+.magna-right {
+    text-align: left;
+    padding: 40px ;
+    font-weight: 100;
+    font-size: 0.9rem;
+    line-height: 20px;
+}
+
+.magna-right h2 {
+    padding: 30px 0 20px;
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+
+.magna-right p {
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+/*****Section-3*****/
+
+.section-trois {
+    border: 0.5px solid rgb(214, 210, 210);
+}
+.tempus-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.tempus-left {
+    text-align: left;
+    padding: 40px ;
+    font-weight: 100;
+    font-size: 0.9rem;
+    line-height: 20px;
+}
+
+.tempus-left h2 {
+    padding: 30px 0 20px;
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+
+.tempus-left p {
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+
+.tempus-right  {
+    background: url(./img/img-right.jpg) center/cover;
+    width: 100%;
+}
+
+/*****Section 4*****/
+.get-row h2 {
+    font-weight: lighter;
+    padding: 40px 0 30px;
+}
+
+form {
+    margin: 0 auto; /*margin: 0 auto car j'ai définit une width sinon ça se décale à gauche*/
+    max-width: 45%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+     "nam ema"
+    "mess mess";
+}
+
+#name {
+    grid-area: nam;
+}
+#email {
+    grid-area: ema;
+}
+#message {
+    grid-area: mess;
+    
+}
+
+
+input {
+    border: 0.5px solid rgb(214, 210, 210);
+    height: 30px;
+    border-radius: 3px;
+}
+
+
+
+/****LOGO CLASS****/
+
+.logo-class {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 400px;
+}
+
+i {
+    padding: 10px;
+    border: 0.5px solid rgb(214, 210, 210) ;
+    border-radius: 50%;
+    margin: 40px 0 60px;
+}
